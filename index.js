@@ -3,8 +3,8 @@ const cluster = require('cluster');
 const os = require('os');
 const config = require('config');
 const app = require('./app');
-const { logger } = require('./src/libs/logger');
-const initLoaders = require('./src/loader');
+const { logger } = require('./libs/logger');
+const initLoaders = require('./loader');
 if (cluster.isPrimary) {
   const numCPUs = os.cpus().length;
   logger.info(`Master ${process.pid} is running. Forking ${numCPUs} workers...`);

@@ -1,6 +1,6 @@
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
-const swaggerConfig = require('../../config/swagger'); // or path to your config file
+const swaggerConfig = require('../config/swagger'); // or path to your config file
 const { logger } = require('../libs/logger');
 
 async function loadSwagger(app) {

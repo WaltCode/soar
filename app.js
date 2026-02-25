@@ -2,8 +2,8 @@ const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
 const config = require('config');
-const { errorHandler} = require('./src/libs/errors')
-const { logger } = require('./src/libs/logger');
+const { errorHandler} = require('./libs/errors')
+const { logger } = require('./libs/logger');
 const app = express();
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
@@ -26,13 +26,13 @@ app.use('/docs', (req, res, next) => {
   // }
 ));
 
-// app.use(require('./src/mws/rateLimit'));
+app.use(require('./mws/rateLimit'));
 app.get('/api/v1/health', (req, res) => res.send('OK'));
 
-app.use('/api/v1/auth', require('./src/managers/authManager').router);
-app.use('/api/v1/schools', require('./src/managers/schoolManager').router);
-app.use('/api/v1/classrooms', require('./src/managers/classroomManager').router);
-app.use('/api/v1/students', require('./src/managers/studentManager').router);
+app.use('/api/v1/auth', require('./managers/authManager').router);
+app.use('/api/v1/schools', require('./managers/schoolManager').router);
+app.use('/api/v1/classrooms', require('./managers/classroomManager').router);
+app.use('/api/v1/students', require('./managers/studentManager').router);
 
 app.use(errorHandler);
 app.use((req, res, next) => {

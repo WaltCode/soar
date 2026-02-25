@@ -16,8 +16,8 @@ const options = {
   },
   apis: [
     path.join(__dirname, './docs/swagger-shared.js'),
-    path.join(__dirname, '../src/managers/*.js'),
-    path.join(__dirname, '../src/models/*.js'), 
+    path.join(__dirname, '../managers/*.js'),
+    path.join(__dirname, '../models/*.js'), 
     path.join(__dirname, '../mws/*.js'),
   ],
 };
