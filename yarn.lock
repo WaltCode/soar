@@ -2878,21 +2878,6 @@ ion-streamer@*:
     nanoid "^3.1.28"
     nanotimer "^0.3.15"
 
-ioredis@0.0.15, ioredis@^5.2.3:
-  version "5.9.3"
-  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-5.9.3.tgz#e897af9f87ee4b7bc61d8bd6373f466aca43d4e0"
-  integrity sha512-VI5tMCdeoxZWU5vjHWsiE/Su76JGhBvWF1MJnV9ZtGltHk9BmD48oDq8Tj8haZ85aceXZMxLNDQZRVo5QKNgXA==
-  dependencies:
-    "@ioredis/commands" "1.5.0"
-    cluster-key-slot "^1.1.0"
-    debug "^4.3.4"
-    denque "^2.1.0"
-    lodash.defaults "^4.2.0"
-    lodash.isarguments "^3.1.0"
-    redis-errors "^1.2.0"
-    redis-parser "^3.0.0"
-    standard-as-callback "^2.1.0"
-
 ioredis@^4.27.9, ioredis@^4.28.2:
   version "4.31.0"
   resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.31.0.tgz#2aa72dc63162c04b2d65a7fa82e52277f8f23e66"
@@ -2906,6 +2891,21 @@ ioredis@^4.27.9, ioredis@^4.28.2:
     lodash.flatten "^4.4.0"
     lodash.isarguments "^3.1.0"
     p-map "^2.1.0"
+    redis-errors "^1.2.0"
+    redis-parser "^3.0.0"
+    standard-as-callback "^2.1.0"
+
+ioredis@^5.2.3, ioredis@^5.4.1:
+  version "5.9.3"
+  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-5.9.3.tgz#e897af9f87ee4b7bc61d8bd6373f466aca43d4e0"
+  integrity sha512-VI5tMCdeoxZWU5vjHWsiE/Su76JGhBvWF1MJnV9ZtGltHk9BmD48oDq8Tj8haZ85aceXZMxLNDQZRVo5QKNgXA==
+  dependencies:
+    "@ioredis/commands" "1.5.0"
+    cluster-key-slot "^1.1.0"
+    debug "^4.3.4"
+    denque "^2.1.0"
+    lodash.defaults "^4.2.0"
+    lodash.isarguments "^3.1.0"
     redis-errors "^1.2.0"
     redis-parser "^3.0.0"
     standard-as-callback "^2.1.0"
